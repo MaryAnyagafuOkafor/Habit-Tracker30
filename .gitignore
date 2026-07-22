@@ -1,0 +1,126 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# ============================================================
+# Virtual Environment
+# ============================================================
+.venv/
+venv/
+ENV/
+env/
+.env
+.venv.bak
+
+# ============================================================
+# Database Files (CRITICAL - DON'T SHARE YOUR DB!)
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.sqlite
+!data/.gitkeep
+
+# ============================================================
+# IDE and Editor Files
+# ============================================================
+# PyCharm
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# Testing and Coverage
+# ============================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+.tox/
+*.log
+
+# ============================================================
+# Distribution / Packaging
+# ============================================================
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+lib/
+lib64/
+parts/
+sdist/
+
+# ============================================================
+# OS Files
+# ============================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+.dirlock
+
+# ============================================================
+# Environment Variables (SECRETS!)
+# ============================================================
+.env
+.env.local
+.env.*.local
+secrets/
+*.pem
+*.key
+*.crt
+
+# ============================================================
+# Logs and Temporary Files
+# ============================================================
+logs/
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ============================================================
+# Ruff/Black/Mypy Cache
+# ============================================================
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.hypothesis/
