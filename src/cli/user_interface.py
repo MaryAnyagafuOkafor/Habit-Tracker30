@@ -486,6 +486,7 @@ class UserInterface:
 
     def _view_user_habits(self):
         """View habits for the current user."""
+
         if not self.current_user:
             print("❌ Please login first")
             return
@@ -500,20 +501,9 @@ class UserInterface:
         print("-" * 40)
 
         for i, habit in enumerate(habits, 1):
-            streak_info = self.manager.get_habit_with_streak(habit.habit_id)
-            status = "✅ Active" if habit.is_active else "❌ Inactive"
+            print(f"{i}. {habit.name} ({habit.periodicity})")
 
-            print(f"{i}. {habit.name}")
-            print(f"   Periodicity: {habit.periodicity}")
-            print(f"   Completions: {len(habit.completions)}")
-            print(f"   Status: {status}")
-
-            if streak_info and "streak_info" in streak_info:
-                si = streak_info["streak_info"]
-                print(f"   Current Streak: {si.get('current_display', 'N/A')}")
-                print(f"   Best Streak: {si.get('longest_display', 'N/A')}")
-
-            print()
+        print()
 
         questionary.press_any_key_to_continue().ask()
 

@@ -12,6 +12,9 @@ Table of Contents
 9.   Testing
 10.  Development
 
+📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 1.  Overview
 Habit Tracker CLI is a powerful command-line application designed to help users build and maintain positive habits. It combines the simplicity of a CLI with robust features like:
 User Authentication – Secure registration and login
@@ -55,7 +58,7 @@ Prerequisites
 - Python 3.10 or higher
 
 Step 1: Clone the Repository
-git clone https://github.com/MaryAnyagafuOkafor/habit-tracker.git
+git clone https://github.com/MaryAnyagafuOkafor/Habit-Tracker30.git
 cd habit-tracker
 
 Step 2: Install Dependencies
